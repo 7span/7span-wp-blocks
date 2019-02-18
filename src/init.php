@@ -75,3 +75,8 @@ function sevenspan_block_category( $categories, $post ) {
 	);
 }
 add_filter( 'block_categories', 'sevenspan_block_category', 10, 2);
+
+
+// block.php
+
+include_once('blocks/posts/block.php');
