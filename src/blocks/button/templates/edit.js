@@ -1,12 +1,5 @@
 const { InspectorControls } = wp.editor;
-const {
-	Button,
-	PanelBody,
-	TextControl,
-	MenuGroup,
-	MenuItem,
-	SelectControl,
-} = wp.components;
+const { PanelBody, TextControl, SelectControl } = wp.components;
 
 import _attributes from '../attributes';
 
