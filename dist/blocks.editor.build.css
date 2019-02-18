@@ -66,3 +66,99 @@ a:hover, a:focus {
       max-width: 540px !important;
       padding-left: 20px;
       padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
