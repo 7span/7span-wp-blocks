@@ -1,90 +1,305 @@
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: orangered;
-  border: 0.2rem solid #292929;
-  color: #292929;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
 */
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: orangered;
-  border: 0.2rem solid #292929;
-  color: #292929;
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.home-banner {
+  background: #ffe183;
+  padding: 50px 0 150px !important;
+  position: relative; }
+
+.home-pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  .home-pattern img {
+    width: 100%; }
+
+.home-banner__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.home-banner__image {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%; }
+  .home-banner__image img {
+    width: 100%; }
+
+.home-banner__content {
+  padding-left: 50px; }
+  .home-banner__content h3 {
+    font-size: 40px;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0px;
+    display: inline-block; }
+    .home-banner__content h3 + h3 {
+      margin-top: 10px; }
+  .home-banner__content p {
+    display: block;
+    margin: 20px 0; }
+
+@media only screen and (max-width: 991px) {
+  .home-banner {
+    overflow: hidden; }
+    .home-banner .home-pattern {
+      left: -10px;
+      right: -10px;
+      bottom: -1px; }
+  .home-banner__content h3 {
+    font-size: 30px; }
+  .home-banner {
+    padding: 50px 0 !important; } }
+
+@media only screen and (max-width: 767px) {
+  .home-banner {
+    padding: 50px 30px !important; }
+    .home-banner .ss-container {
+      padding: 0px !important; }
+  .home-banner__content h3 {
+    font-size: 25px; } }
+
+@media only screen and (max-width: 575px) {
+  .home-banner {
+    padding: 50px 30px !important; }
+  .home-banner__wrap {
+    display: block; }
+  .home-banner__content {
+    padding: 30px 0px 0px 0px; } }
+
+@media only screen and (max-width: 400px) {
+  .home-banner {
+    padding: 50px 20px !important; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: orangered;
-  border: 0.2rem solid #292929;
-  color: #292929;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
 */
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: orangered;
-  border: 0.2rem solid #292929;
-  color: #292929;
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.button,
+.ss-button,
+input[type="button"],
+input[type="submit"] {
+  height: 40px;
+  border: 2px solid #000;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #000000;
+  color: #ffe183;
+  border-radius: 0;
+  letter-spacing: 2px;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .button:hover, .button:focus, .button:visited,
+  .ss-button:hover,
+  .ss-button:focus,
+  .ss-button:visited,
+  input[type="button"]:hover,
+  input[type="button"]:focus,
+  input[type="button"]:visited,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="submit"]:visited {
+    background: #000000;
+    color: #ffe183;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #000000; }
+  .button:hover,
+  .ss-button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    -webkit-box-shadow: 5px 5px 0 0 #ffe183;
+            box-shadow: 5px 5px 0 0 #ffe183; }
+  .button.ss-button--large,
+  .ss-button.ss-button--large,
+  input[type="button"].ss-button--large,
+  input[type="submit"].ss-button--large {
+    height: 60px;
+    padding: 0px 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .button.ss-button--outline,
+  .ss-button.ss-button--outline,
+  input[type="button"].ss-button--outline,
+  input[type="submit"].ss-button--outline {
+    background-color: transparent;
+    color: #000000; }
+    .button.ss-button--outline:hover,
+    .ss-button.ss-button--outline:hover,
+    input[type="button"].ss-button--outline:hover,
+    input[type="submit"].ss-button--outline:hover {
+      color: #ffe183;
+      background-color: #000000;
+      border-color: #000000;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Styles
- *
- * CSS for both Frontend+Backend.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: orangered;
-  border: 0.2rem solid #292929;
-  color: #292929;
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }

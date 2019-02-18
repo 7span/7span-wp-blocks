@@ -1,95 +1,164 @@
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.home-banner input[type="text"],
+.home-banner textarea {
+  background-color: transparent; }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
 */
-/**
- * #.# Editor Styles
- *
- * CSS for just Backend enqueued after style.scss
- * which makes it higher in priority.
- */
-.wp-block-cgb-block-sevenspan-hero {
-  background: #bada55;
-  border: 0.2rem solid #292929;
-  color: #292929;
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
   margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem; }
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }

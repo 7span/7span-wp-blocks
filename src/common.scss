@@ -1,13 +1,85 @@
-/**
- * #.# Common SCSS
- *
- * Can include things like variables and mixins
- * that are used across the project.
-*/
+$primary-color: #ffe183;
+$secondary-color: #fadf1f;
+$font-color--grey: #aaa;
+$grey-light: #f7f7f7;
+$shadow--large: 0px 20px 40px 0 rgba(0, 0, 0, 0.1);
 
-// Colors.
-$black: rgb(41, 41, 41);
-$white: #f4f4f4;
-$gray: #dedede;
-$green: #bada55;
-$red: orangered;
+/*
+* 📣 : Container Width
+*/
+$container-width: (
+	"lg": 1140px,
+	"md": 960px,
+	"sm": 720px,
+	"xs": 540px
+);
+
+a {
+	&:hover,
+	&:focus {
+		outline: none !important;
+	}
+}
+
+/*
+* 📣 : Media Queries
+*/
+//Desktop To Mobile
+@mixin lg-down {
+	@media only screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin md-down {
+	@media only screen and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin sm-down {
+	@media only screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin xs-down {
+	@media only screen and (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin xxs-down {
+	@media only screen and (max-width: 400px) {
+		@content;
+	}
+}
+
+.ss-container {
+	max-width: map-get($container-width, "lg") !important;
+	margin: 0 auto;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	&.is-fluid {
+		max-width: none !important;
+	}
+
+	@include lg-down {
+		max-width: map-get($container-width, "md") !important;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@include md-down {
+		max-width: map-get($container-width, "sm") !important;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include sm-down {
+		max-width: map-get($container-width, "xs") !important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
