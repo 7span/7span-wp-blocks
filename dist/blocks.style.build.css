@@ -364,3 +364,111 @@ a:hover, a:focus {
       max-width: 540px !important;
       padding-left: 20px;
       padding-right: 20px; } }
+@charset "UTF-8";
+/*
+* 📣 : Container Width
+*/
+a:hover, a:focus {
+  outline: none !important; }
+
+/*
+* 📣 : Media Queries
+*/
+.ss-container {
+  max-width: 1140px !important;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .ss-container.is-fluid {
+    max-width: none !important; }
+  @media only screen and (max-width: 1199px) {
+    .ss-container {
+      max-width: 960px !important;
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media only screen and (max-width: 991px) {
+    .ss-container {
+      max-width: 720px !important;
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .ss-container {
+      max-width: 540px !important;
+      padding-left: 20px;
+      padding-right: 20px; } }
+
+.home-banner {
+  background: #ffe183;
+  padding: 50px 0 150px !important;
+  position: relative; }
+
+.home-pattern {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  .home-pattern img {
+    width: 100%; }
+
+.home-banner__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.home-banner__image {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%; }
+  .home-banner__image img {
+    width: 100%; }
+
+.home-banner__content {
+  padding-left: 50px; }
+  .home-banner__content h3 {
+    font-size: 40px;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0px;
+    display: inline-block; }
+    .home-banner__content h3 + h3 {
+      margin-top: 10px; }
+  .home-banner__content p {
+    display: block;
+    margin: 20px 0; }
+
+@media only screen and (max-width: 991px) {
+  .home-banner {
+    overflow: hidden; }
+    .home-banner .home-pattern {
+      left: -10px;
+      right: -10px;
+      bottom: -1px; }
+  .home-banner__content h3 {
+    font-size: 30px; }
+  .home-banner {
+    padding: 50px 0 !important; } }
+
+@media only screen and (max-width: 767px) {
+  .home-banner {
+    padding: 50px 30px !important; }
+    .home-banner .ss-container {
+      padding: 0px !important; }
+  .home-banner__content h3 {
+    font-size: 25px; } }
+
+@media only screen and (max-width: 575px) {
+  .home-banner {
+    padding: 50px 30px !important; }
+  .home-banner__wrap {
+    display: block; }
+  .home-banner__content {
+    padding: 30px 0px 0px 0px; } }
+
+@media only screen and (max-width: 400px) {
+  .home-banner {
+    padding: 50px 20px !important; } }
