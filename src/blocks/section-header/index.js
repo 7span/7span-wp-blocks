@@ -1,11 +1,3 @@
-/**
- * BLOCK: sevenspan-hero
- *
- * Registering a basic block with Gutenberg.
- * Simple block, renders and saves the same content without any interactivity.
- */
-
-//  Import CSS.
 import './style.scss';
 import './editor.scss';
 
@@ -13,10 +5,12 @@ const { registerBlockType } = wp.blocks;
 
 import save from './save';
 import edit from './edit';
+import icon from '../icons';
+
 
 registerBlockType('sevenspan/section-header', {
 	title: 'Section Header',
-	icon: 'header',
+	icon: icon('sectionHeader'),
 	category: 'sevenspan-blocks',
 
 	attributes: {

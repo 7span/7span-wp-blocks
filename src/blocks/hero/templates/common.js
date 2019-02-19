@@ -1,13 +1,13 @@
 export default props => {
 	return (
-		<section className="home-banner">
+		<section className="hero">
 			<div className="ss-container">
-				<div className="home-banner__wrap">
-					<div className="home-banner__image">{ props.image }</div>
-					<div className="home-banner__content">
-						<h3 className="home-banner__title-top">{ props.title1 }</h3>
-						<h3 className="home-banner__title-bottom">{ props.title2 }</h3>
-						<div className="home-banner__desc">{ props.desc }</div>
+				<div className="hero__wrap">
+					<div className="hero__image">{ props.image }</div>
+					<div className="hero__content">
+						<h3 className="hero__title-top">{ props.title1 }</h3>
+						<h3 className="hero__title-bottom">{ props.title2 }</h3>
+						<div className="hero__desc">{ props.desc }</div>
 						{ props.button }
 					</div>
 				</div>

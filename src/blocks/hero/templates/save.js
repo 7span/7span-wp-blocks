@@ -1,25 +1,19 @@
-const { InnerBlocks } = wp.editor;
 import Template from './common';
+import SSImage from '../../../components/image/edit';
+import { ButtonSave } from '../../../components/button';
 
 export default ( { attributes } ) => {
-	const heroImage = ( src, alt ) => {
-		if ( ! src ) {
-			return null;
-		}
-		if ( alt ) {
-			return <img src={ src } alt={ alt } />;
-		}
-		// No alt set, so let's hide it from screen readers
-		return <img src={ src } alt="" aria-hidden="true" />;
-	};
+	const image = (
+		<SSImage attributes={ attributes } alt="imageAlt" src="imageSrc" />
+	);
 
 	return (
 		<Template
-			image={ heroImage( attributes.imageUrl, attributes.imageAlt ) }
+			image={ image }
 			title1={ attributes.title1 }
 			title2={ attributes.title2 }
 			desc={ attributes.summary }
-			button={ <InnerBlocks.Content /> }
+			button={ <ButtonSave attributes={ attributes } /> }
 		/>
 	);
 };

@@ -1,24 +1,20 @@
-import './scss/style.scss';
 import './scss/editor.scss';
-
-const { registerBlockType } = wp.blocks;
+import './scss/style.scss';
 
 import save from './templates/save';
 import edit from './templates/edit';
 import attributes from './attributes';
+import icon from '../icons';
+const { registerBlockType } = wp.blocks;
 
-registerBlockType( 'sevenspan/feature-item', {
-	title: 'Feature Item',
-	icon: 'button',
-	parent: [ 'sevenspan/feature' ],
+registerBlockType( 'sevenspan/image-block', {
+	title: 'Image',
+	icon: icon('image'),
 	category: 'sevenspan-blocks',
-
 	attributes,
-
 	edit( props ) {
 		return edit( props );
 	},
-
 	save( props ) {
 		return save( props );
 	},
