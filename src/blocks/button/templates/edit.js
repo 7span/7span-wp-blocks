@@ -2,15 +2,9 @@ const { InspectorControls } = wp.editor;
 const { PanelBody, TextControl, SelectControl } = wp.components;
 
 import _attributes from '../attributes';
+import Template from './common';
 
 export default ( { attributes, setAttributes } ) => {
-	//Classes
-	const classNames = [
-		'ss-button',
-		`ss-button--${ attributes.size }`,
-		`ss-button--${ attributes.style }`,
-	].join( ' ' );
-
 	return [
 		<InspectorControls key="inspector">
 			<PanelBody>
@@ -44,8 +38,12 @@ export default ( { attributes, setAttributes } ) => {
 				/>
 			</PanelBody>
 		</InspectorControls>,
-		<button className={ classNames } key="editor">
-			{ attributes.label }
-		</button>,
+		<Template
+			key="editor"
+			label={ attributes.label }
+			style={ attributes.style }
+			size={ attributes.size }
+			url={ attributes.url }
+		/>,
 	];
 };

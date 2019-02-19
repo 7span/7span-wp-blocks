@@ -1,23 +1,41 @@
 export default {
 	title1: {
 		source: 'text',
-		selector: '.home-banner__title-top',
+		selector: '.hero__title-top',
 	},
 	title2: {
 		source: 'text',
-		selector: '.home-banner__title-bottom',
+		selector: '.hero__title-bottom',
 	},
 	summary: {
 		type: 'array',
 		source: 'children',
-		selector: '.home-banner__desc',
+		selector: '.hero__desc',
 	},
 	imageAlt: {
 		attribute: 'alt',
-		selector: '.home-banner__image img',
+		selector: '.ss-image img',
 	},
-	imageUrl: {
+	imageSrc: {
 		attribute: 'src',
-		selector: '.home-banner__image img',
+		selector: '.ss-image img',
+	},
+	label: {
+		source: 'text',
+		selector: '.ss-button',
+		default: 'Button',
+	},
+	url: {
+		selector: '.ss-button',
+		source: 'attribute',
+		attribute: 'href',
+	},
+	size: {
+		selector: '.ss-button',
+		default: 'large',
+	},
+	style: {
+		selector: '.ss-button',
+		default: 'default',
 	},
 };

@@ -1,14 +1,12 @@
-export default ( { attributes } ) => {
-	let el;
+import Template from './common';
 
-	if ( attributes.url ) {
-		el = (
-			<a className="button" href={ attributes.url }>
-				{ attributes.label }
-			</a>
-		);
-	} else {
-		el = <button className="button">{ attributes.label }</button>;
-	}
-	return <div>{ el }</div>;
+export default ( { attributes } ) => {
+	return (
+		<Template
+			label={ attributes.label }
+			style={ attributes.style }
+			size={ attributes.size }
+			url={ attributes.url }
+		/>
+	);
 };

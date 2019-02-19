@@ -31,8 +31,8 @@ a:hover, a:focus {
       padding-left: 20px;
       padding-right: 20px; } }
 
-.home-banner input[type="text"],
-.home-banner textarea {
+.hero input[type="text"],
+.hero textarea {
   background-color: transparent; }
 @charset "UTF-8";
 /*
