@@ -1,19 +1,19 @@
 export default {
 	title: {
 		source: 'text',
-		selector: '.title',
+		selector: '.feature__title'
 	},
 	desc: {
 		type: 'array',
 		source: 'children',
-		selector: '.desc',
+		selector: '.feature__desc'
 	},
 	imageAlt: {
 		attribute: 'alt',
-		selector: '.feature__image',
+		selector: '.feature__image img'
 	},
-	imageUrl: {
+	imageSrc: {
 		attribute: 'src',
-		selector: '.feature__image',
-	},
+		selector: '.feature__image img'
+	}
 };

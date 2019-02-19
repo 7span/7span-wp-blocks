@@ -1,45 +1,37 @@
-const { RichText, PlainText, MediaUpload } = wp.editor;
-const { Button } = wp.components;
+const { RichText, PlainText } = wp.editor;
+import Template from './template';
+import { ImageEdit } from '../../../../components/image';
 
-export default ( { attributes, setAttributes } ) => {
-	const getImageButton = openEvent => {
-		if ( attributes.imageUrl ) {
-			return (
-				<img src={ attributes.imageUrl } onClick={ openEvent } className="image" />
-			);
-		}
-		return (
-			<div className="button-container">
-				<Button onClick={ openEvent } className="button button-large">
-						Pick an image
-				</Button>
-			</div>
-		);
-	};
+export default ({ attributes, setAttributes }) => {
+	const title = (
+		<PlainText
+			onChange={title => setAttributes({ title })}
+			value={attributes.title}
+			placeholder="Title"
+			className="heading"
+		/>
+	);
 
-	return [
-		<div>
-			<MediaUpload
-				onSelect={ media => {
-					setAttributes( { imageAlt: media.alt, imageUrl: media.url } );
-				} }
-				type="image"
-				value={ attributes.imageID }
-				render={ ( { open } ) => getImageButton( open ) }
-			/>
-			<PlainText
-				onChange={ content => setAttributes( { title: content } ) }
-				value={ attributes.title }
-				placeholder="Title"
-				className="heading"
-			/>
-			<RichText
-				onChange={ content => setAttributes( { desc: content } ) }
-				value={ attributes.desc }
-				multiline="p"
-				placeholder="Long description"
-				formattingControls={ [ 'bold', 'italic', 'underline' ] }
-			/>
-		</div>,
-	];
+	const desc = (
+		<RichText
+			onChange={desc => setAttributes({ desc })}
+			value={attributes.desc}
+			multiline="p"
+			placeholder="Long description"
+			formattingControls={['bold', 'italic', 'underline']}
+		/>
+	);
+
+	const media = (
+		<ImageEdit
+			attributes={attributes}
+			src="imageSrc"
+			alt="imageAlt"
+			onChange={media => {
+				setAttributes({ imageAlt: media.alt, imageSrc: media.url });
+			}}
+		/>
+	);
+
+	return <Template media={media} title={title} desc={desc} />;
 };

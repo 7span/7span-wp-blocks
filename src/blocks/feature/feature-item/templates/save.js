@@ -1,24 +1,16 @@
-export default ( { attributes } ) => {
-	const media = ( src, alt ) => {
-		if ( ! src ) {
-			return null;
-		}
+import Template from './template';
+import { ImageSave } from '../../../../components/image';
 
-		if ( alt ) {
-			return <img className="feature__image" src={ src } alt={ alt } />;
-		}
-
-		// No alt set, so let's hide it from screen readers
-		return (
-			<img className="feature__image" src={ src } alt="" aria-hidden="true" />
-		);
-	};
+export default ({ attributes }) => {
+	const media = (
+		<ImageSave attributes={attributes} alt="imageAlt" src="imageSrc" />
+	);
 
 	return (
-		<div>
-			{ media( attributes.imageUrl, attributes.imageAlt ) }
-			<h3 className="title">{ attributes.title }</h3>
-			<div className="desc">{ attributes.desc }</div>
-		</div>
+		<Template
+			title={attributes.title}
+			desc={attributes.desc}
+			media={media}
+		/>
 	);
 };

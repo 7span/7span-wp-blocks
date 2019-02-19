@@ -5,14 +5,13 @@ const { registerBlockType } = wp.blocks;
 
 import save from './templates/save';
 import edit from './templates/edit';
+import icon from '../icons';
 import attributes from './attributes';
 
-registerBlockType('sevenspan/feature-item', {
-	title: 'Feature Item',
-	icon: 'button',
-	parent: ['sevenspan/feature'],
+registerBlockType('sevenspan/section', {
+	title: 'Section',
+	icon: icon('sectionHeader'),
 	category: 'sevenspan-blocks',
-
 	attributes,
 
 	edit(props) {

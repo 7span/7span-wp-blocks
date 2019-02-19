@@ -1,19 +1,33 @@
 const { registerBlockType } = wp.blocks;
+const { InnerBlocks } = wp.editor;
 
-import save from './templates/save';
-import edit from './templates/edit';
 import icon from '../icons';
 
-registerBlockType( 'sevenspan/feature', {
+registerBlockType('sevenspan/feature', {
 	title: 'Feature',
 	icon: icon('feature'),
 	category: 'sevenspan-blocks',
 
-	edit( props ) {
-		return edit( props );
+	edit({ attributes }) {
+		return (
+			<div className="features">
+				<InnerBlocks
+					template={[
+						['sevenspan/feature-item'],
+						['sevenspan/feature-item'],
+						['sevenspan/feature-item']
+					]}
+					allowedBlocks={['sevenspan/feature-item']}
+				/>
+			</div>
+		);
 	},
 
-	save( props ) {
-		return save( props );
-	},
-} );
+	save({ attributes }) {
+		return (
+			<div className="features">
+				<InnerBlocks.Content />
+			</div>
+		);
+	}
+});
