@@ -5,3 +5,5 @@ import './feature/feature-item';
 import './posts';
 import './accordion';
 import './accordion/accordion-item';
+import './pricing';
+import './pricing/pricing-item';
