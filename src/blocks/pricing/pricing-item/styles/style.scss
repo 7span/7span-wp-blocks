@@ -1,0 +1,305 @@
+// .pricing-group__list {
+// 	display: flex;
+// 	flex: 0 0 25%;
+// }
+
+.pricing {
+	padding: 25px;
+	box-shadow: $shadow--large;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 0 0 calc(25% - 25px);
+	> main {
+		margin: 20px 0;
+	}
+	> footer {
+		margin-top: auto;
+		.ss-button {
+			width: 100%;
+		}
+	}
+}
+
+.pricing__title {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0px;
+	color: $font-color--grey;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1;
+}
+
+.pricing__price {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 10px;
+	display: block;
+}
+
+.pricing__desc {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	> li {
+		padding: 5px 0;
+		font-size: 14px;
+	}
+}
+
+.pricing-popup {
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+	background: #fff;
+	transition: all 0.3s ease 0s;
+	transform: translate3d(0, 100px, 0);
+	&.open {
+		transform: translate3d(0, 0px, 0);
+		z-index: 99;
+		opacity: 1;
+	}
+	.close-btn {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		color: #000;
+		width: 50px;
+		height: 50px;
+		padding: 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		background: none;
+		font-size: 20px;
+		opacity: 0.2;
+		transition: all 0.3s;
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.pricing-checkout {
+	display: flex;
+	box-shadow: $shadow--large;
+
+	p {
+		margin: 0px;
+	}
+}
+
+.pricing-checkout--left {
+	flex: 0 0 30%;
+}
+
+.pricing-checkout--right {
+	flex: 1;
+	background: #f7f7f7;
+	.wpcf7-submit {
+		height: 60px;
+		padding: 0px 30px;
+		margin-top: 20px;
+	}
+}
+
+.pricing-popup {
+	.wpcf7-validation-errors {
+		display: none !important;
+	}
+	.wpcf7-not-valid-tip {
+		display: none !important;
+	}
+}
+
+.pricing-checkout__box {
+	padding: 50px;
+	.form-box {
+		padding: 0;
+	}
+}
+
+.pricing-title {
+	color: $font-color--grey;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	margin: 0px 0px 10px;
+}
+
+.pricing--slider {
+	display: flex;
+	align-items: center;
+}
+
+.choose_plan {
+	display: block;
+	.wpcf7-list-item {
+		position: relative;
+		width: 100%;
+		margin: 0px;
+		+ .wpcf7-list-item {
+			.wpcf7-list-item-label {
+				border-top: none;
+			}
+		}
+	}
+	.wpcf7-form-control {
+		display: block;
+	}
+	.wpcf7-list-item-label {
+		width: 100%;
+		cursor: pointer;
+		border: 2px solid #000;
+		border-radius: 0px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 20px;
+		width: 100%;
+		color: #000;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	input[type="radio"] {
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: -10px;
+		&:checked {
+			& + span {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+//
+//* RANGE SLIDER
+//
+.rangeslider.rangeslider--horizontal {
+	height: 10px;
+	box-shadow: none;
+	.rangeslider__handle {
+		top: -8px;
+		background-image: none;
+		box-shadow: none;
+		width: 25px;
+		height: 25px;
+		border: 2px solid #000;
+		background: $primary-color;
+
+		&::after {
+			display: none;
+		}
+	}
+	.rangeslider__fill {
+		background: $primary-color;
+		box-shadow: none;
+	}
+}
+
+.your-rating {
+	width: 300px !important;
+	display: block !important;
+	margin-left: 20px;
+}
+
+.rating_value {
+	font-size: 24px;
+	font-weight: 600;
+	margin-left: 20px;
+}
+
+@include sm-down {
+	.pricing {
+		.section-content {
+			.kt-row-column-wrap {
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
+
+				.wp-block-kadence-column {
+					flex: 0 0 48%;
+					max-width: 48%;
+				}
+
+				.kt-inside-inner-col {
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@include sm-down {
+	.pricing {
+		position: relative;
+		z-index: 99;
+		.section-content {
+			.kt-row-column-wrap {
+				display: block;
+
+				.wp-block-kadence-column {
+					max-width: 100%;
+				}
+			}
+		}
+		.button {
+			width: 100%;
+		}
+	}
+
+	.pricing-popup {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		&.open {
+			position: fixed;
+		}
+	}
+	.pricing-checkout {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+	}
+	.pricing-checkout__box {
+		padding: 30px;
+	}
+
+	.choose_plan {
+		overflow: auto;
+		display: block;
+		margin: 0 -30px;
+		padding: 0 30px;
+		> .wpcf7-radio {
+			display: flex;
+		}
+		.wpcf7-list-item {
+			flex: 1 1 auto;
+			white-space: nowrap;
+			display: flex;
+			+ .wpcf7-list-item {
+				margin: 0;
+			}
+			.wpcf7-list-item-label {
+				border: none;
+			}
+		}
+	}
+}

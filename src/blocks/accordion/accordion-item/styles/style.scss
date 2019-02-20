@@ -1,0 +1,35 @@
+.accordion {
+	max-width: 800px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 5px 0;
+	+ .accordion {
+		border-top: 1px solid #eaeaea;
+	}
+
+	details {
+		transition: all 0.3s ease 0s;
+	}
+	summary {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 16px;
+		padding: 20px 0;
+		cursor: pointer;
+		outline: none;
+		&:hover {
+			font-weight: 600;
+		}
+	}
+
+	details[open] {
+		background: $primary-color;
+		padding: 20px 25px;
+		summary {
+			padding: 0px 0 10px 0;
+			font-weight: 600;
+		}
+	}
+}

@@ -1,8 +1,10 @@
 export default props => {
 	return (
-		<div className="accordion">
-			<h3 className="accordion__title">{props.title}</h3>
-			<div className="accordion__desc">{props.desc}</div>
-		</div>
+		<section className="accordion">
+			<details>
+				<summary className="accordion__title">{ props.title }</summary>
+				<div className="accordion__desc ss-p">{ props.desc }</div>
+			</details>
+		</section>
 	);
 };

@@ -1,10 +1,14 @@
 export default props => {
 	return (
-		<div className="pricing">
-			<h3 className="pricing__title">{props.title}</h3>
-			<h4 className="pricing__price">{props.price}</h4>
-			<div className="pricing__desc">{props.desc}</div>
-			{props.button}
-		</div>
+		<article className="pricing">
+			<header>
+				<h3 className="pricing__title">{ props.title }</h3>
+				<strong className="pricing__price">{ props.price }</strong>
+			</header>
+			<main>
+				<ul className="pricing__desc ss-p">{ props.desc }</ul>
+			</main>
+			<footer>{ props.button }</footer>
+		</article>
 	);
 };
