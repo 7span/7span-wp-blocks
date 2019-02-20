@@ -155,7 +155,8 @@ a:hover, a:focus {
   letter-spacing: 2px;
   -ms-flex-pack: center;
       justify-content: center;
-  outline: 0 !important; }
+  outline: 0 !important;
+  cursor: pointer; }
   .ss-button:hover, .ss-button:focus, .ss-button:visited {
     background: #000000;
     color: #ffe183;
