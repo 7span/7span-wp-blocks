@@ -1,0 +1,53 @@
+.feature {
+	display: flex;
+	flex: 0 0 30%;
+}
+
+.feature__image {
+	flex: 0 0 100px;
+	margin-right: 10px;
+}
+
+.feature__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	background: $primary-color;
+
+	img {
+		width: 70%;
+	}
+
+	&:after {
+		content: "";
+		width: 80px;
+		height: 80px;
+		border: 2px solid #000;
+		position: absolute;
+		z-index: -1;
+		top: 10px;
+		right: -10px;
+		bottom: -10px;
+		left: 10px;
+	}
+}
+
+.feature__content {
+}
+
+.feature__title {
+	display: block;
+	font-size: 20px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.feature__desc {
+	font-size: 14px;
+	line-height: 20px;
+	color: #999;
+	margin: 0px;
+}

@@ -1,11 +1,12 @@
 export default {
 	title: {
 		source: 'text',
-		selector: '.title'
+		selector: '.section-header__title',
+		default: 'This is Section!',
 	},
 	desc: {
 		type: 'array',
 		source: 'children',
-		selector: '.desc'
-	}
+		selector: '.section-header__desc',
+	},
 };

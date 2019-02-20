@@ -1,23 +1,28 @@
 const { MediaUpload } = wp.editor;
-const { Button } = wp.components;
+import icon from '../../icons';
+const addImage = icon( 'addImage' );
+const edit = icon( 'edit' );
 
 export default ( { attributes, src, alt, onChange } ) => {
 	const getImageButton = openEvent => {
-		if ( attributes[ src ] ) {
-			return (
-				<img
-					src={ attributes[ src ] }
-					alt={ attributes[ alt ] }
-					onClick={ openEvent }
-					className="image"
-				/>
-			);
-		}
 		return (
-			<div className="button-container">
-				<Button onClick={ openEvent } className="button button-large">
-					Pick an image
-				</Button>
+			<div className="ss-image">
+				{ attributes[ src ] ? (
+					<div className="ss-image__wrap">
+						<img src={ attributes[ src ] } alt={ attributes[ alt ] } />
+						<button
+							type="button"
+							onClick={ openEvent }
+							className="ss-image__update"
+						>
+							{ edit }
+						</button>
+					</div>
+				) : (
+					<button type="button" onClick={ openEvent } className="ss-image__add">
+						{ addImage }
+					</button>
+				) }
 			</div>
 		);
 	};
@@ -33,9 +38,5 @@ export default ( { attributes, src, alt, onChange } ) => {
 		/>
 	);
 
-	return (
-		<div className="ss-image" key="editor">
-			{ imageHolder }
-		</div>
-	);
+	return imageHolder;
 };

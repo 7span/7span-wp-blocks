@@ -1,7 +1,11 @@
 .hero {
-	background: $primary-color;
-	padding: 50px 0 150px !important;
+	background-color: $primary-color;
+	padding: 70px 0 100px 0;
 	position: relative;
+	background-image: url('data:image/svg+xml;utf8,<svg width="1427px" height="62px" version="1.1" xmlns="http://www.w3.org/2000/svg"> <path fill="%23ffffff" d="M0,61.5096972 L0,21.2345278 C133.459836,-7.65616058 275.2135,-7.06637676 425.260993,23.0038792 C654.834989,69.0116362 848.974775,69.0116362 1056.9071,23.0038792 C1193.69183,-7.26153998 1317.05613,-7.66257445 1427,21.8007758 L1427,61.5096972 L0,61.5096972 Z"></path></svg>');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom -5px center;
 }
 
 .hero__wrap {
@@ -33,11 +37,11 @@
 			margin-top: 10px;
 		}
 	}
+}
 
-	p {
-		display: block;
-		margin: 20px 0;
-	}
+.hero__desc {
+	display: block;
+	margin: 20px 0;
 }
 
 @include md-down {

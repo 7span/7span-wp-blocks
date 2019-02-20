@@ -1,0 +1,56 @@
+.ss-image,
+.ss-image__wrap {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.ss-image__wrap {
+	position: relative;
+	&:hover {
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border: 2px dashed #000;
+		}
+		.ss-image__update {
+			display: flex;
+		}
+	}
+}
+
+.ss-image__add {
+	padding: 20px;
+	background: transparent;
+	border: 2px dashed #000;
+	cursor: pointer;
+	svg {
+		vertical-align: top;
+	}
+}
+.ss-image__update {
+	background: #000;
+	padding: 0;
+	border: none;
+	z-index: 2;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	cursor: pointer;
+	svg {
+		vertical-align: top;
+	}
+}

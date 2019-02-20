@@ -54,32 +54,3 @@ a {
 		@content;
 	}
 }
-
-.ss-container {
-	max-width: map-get($container-width, "lg") !important;
-	margin: 0 auto;
-	padding-left: 50px;
-	padding-right: 50px;
-
-	&.is-fluid {
-		max-width: none !important;
-	}
-
-	@include lg-down {
-		max-width: map-get($container-width, "md") !important;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	@include md-down {
-		max-width: map-get($container-width, "sm") !important;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	@include sm-down {
-		max-width: map-get($container-width, "xs") !important;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}

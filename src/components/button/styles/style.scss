@@ -1,0 +1,46 @@
+.ss-button {
+	height: 40px;
+	border: 2px solid #000;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 20px;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	background: #000000;
+	color: $primary-color;
+	border-radius: 0;
+	letter-spacing: 2px;
+	justify-content: center;
+	&:hover,
+	&:focus,
+	&:visited {
+		background: #000000;
+		color: $primary-color;
+		box-shadow: none;
+		border-color: #000000;
+	}
+	&:hover {
+		box-shadow: 5px 5px 0 0 $primary-color;
+	}
+
+	&.ss-button--large {
+		height: 60px;
+		padding: 0px 40px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	&.ss-button--outline {
+		background-color: transparent;
+		color: #000000;
+		&:hover {
+			color: $primary-color;
+			background-color: #000000;
+			border-color: #000000;
+			box-shadow: none;
+		}
+	}
+}
